@@ -1,8 +1,7 @@
 {
   "name": "Itsuki-Nakano",
-  "author": "Hady Zen",
-  "description": "Itsuki-Nakano Messegger AI Bot",
-  "version": "1.0.0",
+  "description": "Itsuki-Nakano Messegger AI Bot By Hady and Saveng",
+  "version": "1.2.0",
   "main": "itsuki.js",
   "engines": {
     "node": "16.x",
