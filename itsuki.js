@@ -1,21 +1,14 @@
-  const express = require('express');
+ 	const express = require('express');
 	const app = express();
 	const axios = require('axios');
 	const { execSync } = require('child_process');
 	const { warna, font, logo } = require("./hady-zen/log.js");
 	const fs = require("fs");
 	const path = require("path");
-	const login = require("./fb-chat-api-temp-master")
+	const login = require("./fb-chat-api-temp")
 	const akun = fs.readFileSync('akun.txt', 'utf8');
 	const { awalan } = require('./config.json');
 
-	if (!login) {
-		execSync("node main.sh"); 
-		console.log("sukses add fb-chat-api");
-	} else {
-		console.log("gagal add fb-chat-api");
-	}
- 
 console.log(warna.biru + `
 █ ▀█▀ █▀ █░█ █▄▀ █ ░█▄░█ ▄▀█ █▄▀ ▄▀█ █▄░█ █▀█
 █ ░█░ ▄█ █▄█ █░█ █ ░█░▀█ █▀█ █░█ █▀█ █░▀█ █▄█
