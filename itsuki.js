@@ -5,7 +5,7 @@
 	const { warna, font, logo } = require("./hady-zen/log.js");
 	const fs = require("fs");
 	const path = require("path");
-	const login = require("./fb-chat-api-temp")
+	const login = require("./fb-chat-api-temp-master")
 	const akun = fs.readFileSync('akun.txt', 'utf8');
 	const { awalan } = require('./config.json');
 
