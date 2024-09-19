@@ -14,7 +14,6 @@
     "mqtt": "^4.3.7",
     "mqtt-packet": "^6.9.1",
     "npmlog": "^6.0.2",
-    "fb-chat-api-temp": "^fb-chat-api-temp",
     "websocket-stream": "^5.5.2"
   },
   "author": "Hady & Saveng",
@@ -24,6 +23,6 @@
 		"url": "git+https://github.com/MaskStarmoon/itsuki-nakano-v1.2-modified-public.git"
 	},
   "scripts": {
-    "start": "process.env.nodeIndex&& node itsuki.js"
+    "start": "set NODE_ENV=&& node itsuki.js"
   }
 }
