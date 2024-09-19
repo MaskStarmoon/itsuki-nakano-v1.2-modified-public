@@ -17,6 +17,12 @@
     "fb-chat-api-temp": "^fb-chat-api-temp",
     "websocket-stream": "^5.5.2"
   },
+  "author": "Hady & Saveng",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MaskStarmoon/itsuki-nakano-v1.2-modified-public.git"
+	},
   "scripts": {
     "start": "process.env.nodeIndex&& node itsuki.js"
   }
