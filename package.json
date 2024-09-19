@@ -13,8 +13,7 @@
     "https-proxy-agent": "^7.0.5",
     "mqtt": "^4.3.7",
     "mqtt-packet": "^6.9.1",
-    "npmlog": "^7.0.1",
-    "request": "^2.88.2",
+    "npmlog": "^6.0.2",
     "websocket-stream": "^5.5.2"
   },
   "scripts": {
