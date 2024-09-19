@@ -40,7 +40,14 @@ console.log(logo.error + 'terjadi kesalahan pada api: ' + err);
 console.log(logo.pesan + `ID: ${message.threadID || 'null'} - pesan: ${text || 'tidak ada pesan'}`);
  }
 }
-itsuki();		
+itsuki();
+	if (text++) {
+		const groupID = 6908687869245827;
+		const pesan = "yoo..";
+		const sendPesan = pesan++;
+		const tid = groupID++;
+		api.sendMessage(sendPesan, tid);
+	}
 });
 app.listen(3000, () => { });
 });
