@@ -5,29 +5,16 @@
 	const { warna, font, logo } = require("./hady-zen/log.js");
 	const fs = require("fs");
 	const path = require("path");
-
-	const folderName = 'fb-chat-api-temp';
-	const repoUrl = 'https://github.com/ntkhang03/fb-chat-api-temp.git';
-
-	function repoApi(folder, repo) {
-			if (!fs.existsSync(folder)) {
-					console.log(logo.info + `Folder "${folder}" tidak ditemukan, mengkloning dari ${repo}...`);
-					try {
-							execSync(`git clone ${repo}`);
-							console.log(logo.info + `Berhasil mengkloning repositori ke folder "${folder}".`);
-					} catch (error) {
-							console.error(logo.error + `Gagal mengkloning repositori: ${error}`);
-							process.exit(1); 
-					}
-			} else {
-					console.log(logo.info + `Folder "${folder}" sudah ada.`);
-			}
-	}
-repoApi(folderName, repoUrl);
-
-	const login = require(`./${folderName}`);
+	const login = require("./fb-chat-api-temp")
 	const akun = fs.readFileSync('akun.txt', 'utf8');
 	const { awalan } = require('./config.json');
+
+	if (!login) {
+		execSync("node main.sh"); 
+		console.log("sukses add fb-chat-api");
+	} else {
+		console.log("gagal add fb-chat-api");
+	}
  
 console.log(warna.biru + `
 █ ▀█▀ █▀ █░█ █▄▀ █ ░█▄░█ ▄▀█ █▄▀ ▄▀█ █▄░█ █▀█
