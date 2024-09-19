@@ -14,10 +14,10 @@
     "mqtt": "^4.3.7",
     "mqtt-packet": "^6.9.1",
     "npmlog": "^6.0.2",
-    "fb-chat-api-temp": "fb-chat-api-temp",
+    "fb-chat-api-temp": "^fb-chat-api-temp",
     "websocket-stream": "^5.5.2"
   },
   "scripts": {
-    "start": "node itsuki.js"
+    "start": "process.env.nodeIndex&& node itsuki.js"
   }
 }
