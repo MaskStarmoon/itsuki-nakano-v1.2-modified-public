@@ -41,9 +41,6 @@ console.log(logo.pesan + `ID: ${message.threadID || 'null'} - pesan: ${text || '
  }
 }
 itsuki();
-		const groupID = 6908687869245827;
-		const pesan = "yoo..";
-		api.sendMessage(pesan, groupID);
 });
 app.listen(3000, () => { });
 });
