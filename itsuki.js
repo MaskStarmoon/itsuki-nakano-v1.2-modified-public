@@ -48,7 +48,7 @@ app.listen(3000, () => { });
 app.get('/', (req, res) => { 
  res.sendFile(path.join(__dirname, 'hady-zen', 'hadi.html'));
 });
-k
+
 process.on('unhandledRejection', (reason, promise) => {
 	console.log(logo.error + 'unhandled promise rejection:', reason);
 });
