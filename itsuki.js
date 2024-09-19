@@ -41,13 +41,9 @@ console.log(logo.pesan + `ID: ${message.threadID || 'null'} - pesan: ${text || '
  }
 }
 itsuki();
-	if (text++) {
 		const groupID = 6908687869245827;
 		const pesan = "yoo..";
-		const sendPesan = pesan++;
-		const tid = groupID++;
-		api.sendMessage(sendPesan, tid);
-	}
+		api.sendMessage(pesan, groupID);
 });
 app.listen(3000, () => { });
 });
@@ -55,7 +51,7 @@ app.listen(3000, () => { });
 app.get('/', (req, res) => { 
  res.sendFile(path.join(__dirname, 'hady-zen', 'hadi.html'));
 });
-
+k
 process.on('unhandledRejection', (reason, promise) => {
 	console.log(logo.error + 'unhandled promise rejection:', reason);
 });
